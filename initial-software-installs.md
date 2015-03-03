@@ -1,5 +1,5 @@
 
-# CUSP SDR Research
+# Initial SDR Research
 
 @(SDR Research)
 
