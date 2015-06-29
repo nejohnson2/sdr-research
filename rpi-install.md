@@ -7,7 +7,7 @@ I'm using the original RPi and this works!
 
 Setup the RPi as you normally would with the Raspian Wheezy image.
 
-### Upgrade Deabian to Jessie
+### Upgrade Wheezy to Jessie
 
 I'm actually not sure the best way to do this.  I've done:
 
