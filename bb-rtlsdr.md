@@ -37,7 +37,7 @@ sudo ldconfig
 
 ### Optional
 
-[Dump1090](https://github.com/antirez/dump1090) is a library that lets you decode nearby aircraft signals.  The libary has an option to run a server which lets you visualize the air craft on a map.
+[Dump1090](https://github.com/antirez/dump1090) is a library that lets you decode nearby aircraft signals.  The libary has an option to run a server which lets you visualize the air craft on a map.  Another, and better version was forked [here](https://github.com/MalcolmRobb/dump1090)
 
 ```shell
 git clone https://github.com/antirez/dump1090.git
