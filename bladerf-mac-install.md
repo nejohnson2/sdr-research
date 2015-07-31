@@ -16,3 +16,12 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/opt/local ..
 make
 sudo make install
 ```
+
+### Testing
+
+You should now be able to run the ```bladeRF-cli``` like this:
+
+```shell
+# probe for connected bladerf
+./bladRF-cli -p
+```
