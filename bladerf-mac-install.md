@@ -17,6 +17,10 @@ make
 sudo make install
 ```
 
+### Homebrew
+
+I originally wanted to install this with Homebrew from [```edy555/bladerf```](https://github.com/edy555/homebrew-bladerf) but was not able to get it to work.  I kept getting an compile error.
+
 ### Testing
 
 You should now be able to run the ```bladeRF-cli``` like this:
