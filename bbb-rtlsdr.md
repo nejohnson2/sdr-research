@@ -55,7 +55,7 @@ Now open up a browser and navigate to the IP of the Beaglebone at port 8081.
 
 ### Setting up the BeagleBone Black
 
-Download the latest .img file [*Ubuntu Saucy 13.10*](http://www.armhf.com/downloads-old/).  Unfortunately I can't find the Ubuntu 14.04 Trusty .img file anywhere and I dont know how to use the binary file to get the BBB operating.  I also use [PiFiler](http://ivanx.com/raspberrypi/) which is designed for Raspberry Pi but works for our purposes here.
+Download the latest .img file [*BBB-eMMC-flasher-ubuntu-14.04.img*](https://rcn-ee.com/rootfs/2015-07-08/flasher/BBB-eMMC-flasher-ubuntu-14.04.2-console-armhf-2015-07-08-2gb.img.xz).  Unfortunately I can't find the Ubuntu 14.04 Trusty .img file anywhere and I dont know how to use the binary file to get the BBB operating.  I also use [PiFiler](http://ivanx.com/raspberrypi/) which is designed for Raspberry Pi but works for our purposes here.
 
 **Flash the BBB**
 Use PiFiler to install the .img file onto you're clean Fat32 formatted sd card.  (I'm using 16GB).  Eject.  Place in BeagleBone and hold down the User Boot button until all of the LEDs start flashing.  Let go of button.  Let the BBB go for 30-45 mins.  All LEDs will be blue when the flashing is finished.  
