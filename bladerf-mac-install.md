@@ -32,6 +32,6 @@ You should now be able to run the ```bladeRF-cli``` like this:
 > I ran into issues here.  The file needs the proper permissions.  Either run as sudo or go to ```/opt/local/bin/``` and exectute ```sudo chown <user> bladeRF-cli```.  You can also add this to your ```.bash_profile``` like this:
 
 ```shell
-export PATH="/opt/local/bin/bladeRF-cli:$PATH"
+export PATH="/opt/local/bin/:$PATH"
 source .bash_profile
 ```
