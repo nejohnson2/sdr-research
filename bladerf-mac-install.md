@@ -29,3 +29,4 @@ You should now be able to run the ```bladeRF-cli``` like this:
 # probe for connected bladerf
 ./bladRF-cli -p
 ```
+> I ran into issues here.  The file needs the proper permissions.  Either run as sudo or go to ```/opt/local/bin/``` and exectute ```sudo chown <user> bladeRF-cli```
