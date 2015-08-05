@@ -21,7 +21,7 @@ VERSION_ID="14.04"
 ```shell
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install build-essentials git cmake pkg-config libusb-1.0-0-dev
+sudo apt-get install build-essential git cmake pkg-config libusb-1.0-0-dev
 ```
 
 ### Build RTL-SDR 
