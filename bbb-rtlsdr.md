@@ -1,19 +1,19 @@
 # Using BeagleBone Black with RTLSDR
 
-I'm running this on the original Beaglebone and I've flashed Ubuntu onto the system.  I dont remember how...I'll post about that someday.
+I'm running this on the original Beaglebone and I've flashed Ubuntu onto the system.  See directions to flash below
 Running Ubuntu:
 
 ```
 DISTRIB_ID=Ubuntu
-DISTRIB_RELEASE=12.04
-DISTRIB_CODENAME=precise
-DISTRIB_DESCRIPTION="Ubuntu 12.04.5 LTS"
+DISTRIB_RELEASE=14.04
+DISTRIB_CODENAME=trusty
+DISTRIB_DESCRIPTION="Ubuntu 14.04.2 LTS"
 NAME="Ubuntu"
-VERSION="12.04.5 LTS, Precise Pangolin"
+VERSION="14.04.02 LTS, Trusty Tahr"
 ID=ubuntu
 ID_LIKE=debian
-PRETTY_NAME="Ubuntu precise (12.04.5 LTS)"
-VERSION_ID="12.04"
+PRETTY_NAME="Ubuntu 14.04.2 LTS"
+VERSION_ID="14.04"
 ```
 
 ### Update Ubuntu
