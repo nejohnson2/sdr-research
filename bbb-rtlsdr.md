@@ -27,7 +27,7 @@ sudo apt-get install build-essential git cmake pkg-config libusb-1.0-0-dev
 ### Build RTL-SDR 
 
 ```shell
-git clone git://gitosmocom.org/rtl-sdr.git
+git clone git://git.osmocom.org/rtl-sdr.git
 cd rtl-sdr 
 cmake ./ -DINSTALL_UDEV_RULES=ON
 sudo make
