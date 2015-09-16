@@ -69,6 +69,15 @@ Test to make sure bladerf works:
 bladeRF-cli --version
 ```
 
+Download the FPGA bitstream file:
+
+> Note: The version depends on your version of bladerf
+
+```
+wget https://www.nuand.com/fpga/hostedx40-latest.rbf
+bladeRF-cli -l hostedx40-latest.rbf
+```
+
 ### Install RTL Drivers
 
 ```
