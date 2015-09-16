@@ -9,17 +9,10 @@ Setup the RPi as you normally would with the Raspian Wheezy image.
 
 ### Upgrade Wheezy to Jessie
 
-I'm actually not sure the best way to do this.  I've done:
-
-```
-sudo apt-get update
-sudo apt-get upgrade
-```
-
 That has worked though you might have to add this to your /etc/apt/sources.list file:
 
 ```
-deb http://archive.raspbian.org/raspbian jessie main
+sudo echo 'deb http://archive.raspbian.org/raspbian jessie main' >> /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get upgrade
 ```
