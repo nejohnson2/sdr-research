@@ -47,6 +47,10 @@ sudo apt-get install gnuradio gnuradio-dev
 Notes on install bladerf are found [here](https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux)
 
 ```
+# dependencies
+sudo apt-get install software-properties-common 
+sudo apt-get install python-software-properties
+
 sudo add-apt-repository ppa:bladerf/bladerf
 sudo apt-get update
 sudo apt-get install bladerf
@@ -66,4 +70,7 @@ run:
 ```
 rtl_power -f 90M:120M:8k -g 50 -i 2 -e 1h data.csv
 ```
+
+### Install gr-gsm
+Notes are [here](https://github.com/ptrkrysik/gr-gsm/wiki/Installation)
 
