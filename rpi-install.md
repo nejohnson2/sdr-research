@@ -21,6 +21,7 @@ When complete (which does take a long time) you should see this:
 
 ```
 lsb_release -a
+
 Distributor ID: Raspbian
 Description:    Raspbian GNU/Linux 8.0 (jessie)
 Release:        8.0
