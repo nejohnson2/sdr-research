@@ -92,6 +92,25 @@ run:
 rtl_power -f 90M:120M:8k -g 50 -i 2 -e 1h data.csv
 ```
 
+### Install libosmocore (dependencies of gr-gsm)
+
+Installing from source.  This is necessary for gr-gsm.
+
+```
+# dependencies
+sudo apt-get install libtool shtool autoconf automake git-core make gcc
+
+git clone git://git.osmocom.org/libosmocore.git
+
+cd libosmocore
+autoreconf -i
+./configure
+make
+sudo make install
+sudo ldconfig -i
+cd ..
+```
+
 ### Install gr-gsm
 Notes are [here](https://github.com/ptrkrysik/gr-gsm/wiki/Installation).  We are installing from source.
 
