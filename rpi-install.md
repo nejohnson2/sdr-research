@@ -5,11 +5,11 @@ I'm using the original RPi and this works!
 
 ### Install Raspian Wheezy
 
-Setup the RPi as you normally would with the Raspian Wheezy image.
+Setup the RPi as you normally would with the Raspian Wheezy image.  I usually have success using [Pi filer](http://ivanx.com/raspberrypi/)
 
 ### Upgrade Wheezy to Jessie
 
-That has worked though you might have to add this to your /etc/apt/sources.list file:
+This takes a long time.
 
 ```
 sudo echo 'deb http://archive.raspbian.org/raspbian jessie main' >> /etc/apt/sources.list
@@ -17,7 +17,7 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-When complete (which does take a long time) you should see this:
+When complete, check your version:
 
 ```
 > lsb_release -a
@@ -51,6 +51,9 @@ GNU Radio Companion 3.7.2.1
 ```
 
 ### Instal Bladerf Libraries(untested)
+
+**Fails - the bladerf repository does not exist for Raspbian/jessie**
+
 Notes on install bladerf are found [here](https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux)
 
 ```
