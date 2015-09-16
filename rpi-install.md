@@ -47,7 +47,7 @@ Test version:
 ```
 > gnuradio-companion --version
 
-GNU Radio Companion 3.7.2.1
+GNU Radio Companion 3.7.5
 ```
 
 ### Instal Bladerf Libraries(untested)
