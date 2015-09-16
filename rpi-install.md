@@ -52,7 +52,18 @@ GNU Radio Companion 3.7.5
 
 ### Instal Bladerf Libraries(untested)
 
-**Fails - the bladerf repository does not exist for Raspbian/jessie**
+Installing from source:
+```
+git clone https://github.com/Nuand/bladeRF.git ./bladeRF
+cd ./bladeRF
+cd host/
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local -DINSTALL_UDEV_RULES=ON ../
+make && sudo make install && sudo ldconfig
+```
+
+**Fails - the code below fails because the bladerf repository does not exist for Raspbian/jessie**
 
 Notes on install bladerf are found [here](https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux)
 
