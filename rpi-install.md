@@ -99,6 +99,7 @@ Installing from source.  This is necessary for gr-gsm.
 ```
 # dependencies
 sudo apt-get install libtool shtool autoconf automake git-core make gcc
+sudo apt-get install libpcsclite-dev
 
 git clone git://git.osmocom.org/libosmocore.git
 
