@@ -50,7 +50,7 @@ Test version:
 GNU Radio Companion 3.7.5
 ```
 
-### Instal Bladerf Libraries
+### Install Bladerf Libraries
 
 Installing from source:
 ```
