@@ -63,21 +63,6 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local -DINSTALL_UDE
 make && sudo make install && sudo ldconfig
 ```
 
-**Fails - the code below fails because the bladerf repository does not exist for Raspbian/jessie**
-
-Notes on install bladerf are found [here](https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux)
-
-```
-# dependencies
-sudo apt-get install software-properties-common 
-sudo apt-get install python-software-properties
-
-sudo add-apt-repository ppa:bladerf/bladerf
-sudo apt-get update
-sudo apt-get install bladerf
-sudo apt-get install libbladerf-dev
-```
-
 ### Install RTL Drivers
 
 ```
