@@ -20,7 +20,7 @@ sudo apt-get upgrade
 When complete (which does take a long time) you should see this:
 
 ```
-lsb_release -a
+> lsb_release -a
 
 Distributor ID: Raspbian
 Description:    Raspbian GNU/Linux 8.0 (jessie)
@@ -41,6 +41,13 @@ Very easy...
 
 ```
 sudo apt-get install gnuradio gnuradio-dev
+```
+
+Test version:
+```
+> gnuradio-companion --version
+
+GNU Radio Companion 3.7.2.1
 ```
 
 ### Instal Bladerf Libraries(untested)
