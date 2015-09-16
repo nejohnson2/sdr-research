@@ -63,6 +63,12 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local -DINSTALL_UDE
 make && sudo make install && sudo ldconfig
 ```
 
+Test to make sure bladerf works:
+
+```
+bladeRF-cli --version
+```
+
 ### Install RTL Drivers
 
 ```
