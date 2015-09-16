@@ -132,6 +132,6 @@ sudo make install
 Test with RTLSDR:
 
 ```
-something
+airprobe_rtlsdr.py
 ```
 
