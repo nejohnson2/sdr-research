@@ -17,12 +17,29 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
+### Dependencies
+There are taken from the bladerf install
+
+```
+sudo apt-get install libusb-1.0-0-dev libusb-1.0-0 build-essential cmake libncurses5-dev libtecla1 libtecla-dev pkg-config git wget
+```
+
 ### Install GNURadio
 
 Very easy...
 
 ```
 sudo apt-get install gnuradio gnuradio-dev
+```
+
+### Instal Bladerf Libraries(untested)
+Notes on install bladerf are found [here](https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux)
+
+```
+sudo add-apt-repository ppa:bladerf/bladerf
+sudo apt-get update
+sudo apt-get install bladerf
+sudo apt-get install libbladerf-dev
 ```
 
 ### Install RTL Drivers
