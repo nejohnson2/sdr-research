@@ -93,5 +93,24 @@ rtl_power -f 90M:120M:8k -g 50 -i 2 -e 1h data.csv
 ```
 
 ### Install gr-gsm
-Notes are [here](https://github.com/ptrkrysik/gr-gsm/wiki/Installation)
+Notes are [here](https://github.com/ptrkrysik/gr-gsm/wiki/Installation).  We are installing from source.
+
+```
+# install dependencies
+sudo apt-get install cmake libboost-all-dev libcppunit-dev swig doxygen liblog4cpp5-dev python-scipy
+
+git clone https://github.com/ptrkrysik/gr-gsm.git ./gr-gsm
+
+cd gr-gsm
+mkdir build
+cmake ..
+make
+sudo make install
+```
+
+Test with RTLSDR:
+
+```
+something
+```
 
