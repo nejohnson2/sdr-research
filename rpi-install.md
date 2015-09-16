@@ -123,6 +123,7 @@ git clone https://github.com/ptrkrysik/gr-gsm.git ./gr-gsm
 
 cd gr-gsm
 mkdir build
+cd build
 cmake ..
 make
 sudo make install
