@@ -20,7 +20,7 @@ sudo apt-get upgrade
 When complete, check your version:
 
 ```
-> lsb_release -a
+> cat /etc/*-release
 
 Distributor ID: Raspbian
 Description:    Raspbian GNU/Linux 8.0 (jessie)
@@ -32,7 +32,7 @@ Codename:       jessie
 There are taken from the bladerf install
 
 ```
-sudo apt-get install libusb-1.0-0-dev libusb-1.0-0 build-essential cmake libncurses5-dev libtecla1 libtecla-dev pkg-config git wget
+sudo apt-get install libusb-1.0-0-dev libusb-1.0-0 build-essential cmake libncurses5-dev libtecla1 libtecla-dev wget
 ```
 
 ### Install GNURadio
@@ -98,7 +98,7 @@ Installing from source.  This is necessary for gr-gsm.
 
 ```
 # dependencies
-sudo apt-get install libtool shtool autoconf automake git-core make gcc
+sudo apt-get install libtool shtool autoconf automake gcc
 sudo apt-get install libpcsclite-dev
 
 git clone git://git.osmocom.org/libosmocore.git
