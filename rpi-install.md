@@ -46,7 +46,7 @@ sudo apt-get install libtool shtool autoconf automake gcc
 sudo apt-get install libpcsclite-dev
 
 # gr-gsm dependencies
-sudo apt-get install cmake libboost-all-dev libcppunit-dev swig doxygen liblog4cpp5-dev python-scipy
+sudo apt-get install libboost-all-dev libcppunit-dev swig doxygen liblog4cpp5-dev python-scipy
 
 ```
 
