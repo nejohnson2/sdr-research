@@ -145,7 +145,7 @@ Create and/or edit ```~/.gnuradio/config.conf``` and add the following:
 local_blocks_path=/usr/local/share/gnuradio/grc/blocks
 ```
 
-**Fails**.  After all of that, it seems ```gr-gsm``` does not work correctly.  [This blog] describes a bit of the problem.  I was receiving this error:
+**Fails**.  After all of that, it seems ```gr-gsm``` does not work correctly.  [This blog](https://batilanblog.wordpress.com/2015/02/17/using-ec3k-with-raspberry-pi/) describes a bit of the problem.  I was receiving this error:
 
 ```
 Using Volk machine: generic
