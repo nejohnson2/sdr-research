@@ -3,6 +3,8 @@
 Here are some note about getting the Realtek RTLSDR up and running on a Raspberry Pi. Its surprisingly easly!  
 I'm using the original RPi and this works!
 
+> Note:  You will need an sd card larger than 4gb!
+
 ### Install Raspian Wheezy
 
 Setup the RPi as you normally would with the Raspian Wheezy image.  I usually have success using [Pi filer](http://ivanx.com/raspberrypi/)
