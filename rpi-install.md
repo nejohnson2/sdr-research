@@ -137,6 +137,13 @@ make
 sudo make install
 ```
 
+Create and/or edit ```~/.gnuradio/config.conf``` and add the following:
+
+```
+[grc]
+local_blocks_path=/usr/local/share/gnuradio/grc/blocks
+```
+
 Test with RTLSDR:
 
 ```
