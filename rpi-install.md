@@ -36,7 +36,16 @@ Codename:       jessie
 There are taken from the bladerf install
 
 ```
+# bladerf dependencies
 sudo apt-get install libusb-1.0-0-dev libusb-1.0-0 build-essential cmake libncurses5-dev libtecla1 libtecla-dev wget
+
+# dependencies for libosmocore
+sudo apt-get install libtool shtool autoconf automake gcc
+sudo apt-get install libpcsclite-dev
+
+# gr-gsm dependencies
+sudo apt-get install cmake libboost-all-dev libcppunit-dev swig doxygen liblog4cpp5-dev python-scipy
+
 ```
 
 ### Install GNURadio
@@ -101,10 +110,6 @@ rtl_power -f 90M:120M:8k -g 50 -i 2 -e 1h data.csv
 Installing from source.  This is necessary for gr-gsm.
 
 ```
-# dependencies
-sudo apt-get install libtool shtool autoconf automake gcc
-sudo apt-get install libpcsclite-dev
-
 git clone git://git.osmocom.org/libosmocore.git
 
 cd libosmocore
@@ -120,9 +125,6 @@ cd ..
 Notes are [here](https://github.com/ptrkrysik/gr-gsm/wiki/Installation).  We are installing from source.
 
 ```
-# install dependencies
-sudo apt-get install cmake libboost-all-dev libcppunit-dev swig doxygen liblog4cpp5-dev python-scipy
-
 git clone https://github.com/ptrkrysik/gr-gsm.git ./gr-gsm
 
 cd gr-gsm
