@@ -135,6 +135,7 @@ cd build
 cmake ..
 make
 sudo make install
+sudo ldconfig
 ```
 
 Create and/or edit ```~/.gnuradio/config.conf``` and add the following:
@@ -142,6 +143,37 @@ Create and/or edit ```~/.gnuradio/config.conf``` and add the following:
 ```
 [grc]
 local_blocks_path=/usr/local/share/gnuradio/grc/blocks
+```
+
+**Fails**.  After all of that, it seems ```gr-gsm``` does not work correctly.  [This blog] describes a bit of the problem.  I was receiving this error:
+
+```
+Using Volk machine: generic
+VOLK: Error allocating memory (posix_memalign: 22)
+Segmentation fault
+```
+
+To get around it you will need to recompile gnuradio from source with a patch.
+
+```
+# get gnuradio source
+wget http://gnuradio.org/releases/gnuradio/gnuradio-3.7.5.tar.gz
+tar xvzf gnuradio-3.7.5.tar.gz
+cd gnuradio-3.7.5.tar.gz
+
+# get patch file
+wget http://gnuradio.org/redmine/attachments/download/821/0001-volk-Fix-volk_malloc-when-alignment-is-1.patch
+patch -p1 < *volk*.patch
+```
+
+Now rebuild gnuradio with patch:
+
+```
+mkdir build
+cd build
+cmake -DENABLE_DEFAULT=Off -DENABLE_VOLK=True -Dhave_mfpu_neon=0 ..
+make
+sudo make install
 ```
 
 Test with RTLSDR:
