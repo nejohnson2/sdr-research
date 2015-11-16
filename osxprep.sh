@@ -18,3 +18,9 @@ echo "------------------------------"
 echo "Installing Xcode Command Line Tools."
 # Install Xcode command line tools
 xcode-select --install
+
+#
+touch ~/.bash_profile
+echo "export PS1=\"uosdr : \"" >> ~/.bash_profile
+echo "export CLICOLOR=1" >> ~/.bash_profile
+source ~/.bash_profile
