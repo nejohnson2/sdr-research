@@ -4,6 +4,7 @@
 pip install lxml
 pip install cheetah
 pip install sphinx
+pip install docutils
 pip install numpy
 pip install matplotlib
 pip install pillow
