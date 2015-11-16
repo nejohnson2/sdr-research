@@ -22,9 +22,6 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade --all
 
-# Install `wget` with IRI support.
-brew install wget
-
 # Install Python
 brew install python
 brew install gcc
@@ -32,6 +29,7 @@ brew install swig
 brew install pkg-config
 brew install git
 brew install node
+brew install wget
 brew install heroku-toolbelt
 heroku update
 
