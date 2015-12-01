@@ -4,25 +4,23 @@
 brew install gnuradio
 brew install hackrf
 
-brew tap andresv/homebrew-gnuradio
+brew tap nejohnson2/homebrew-sdr
 brew install bladerf --HEAD 
 brew install rtlsdr --HEAD 
-
 brew install gr-osmosdr gr-baz --HEAD
+
+brew install gqrx --HEAD
+
+# Using a forked version nejohnson2/libosmocore because of 
+# a bug when installing on OSX 10.11
+brew install libosmocore --HEAD # dependencies of gr-gsm
+brew install gr-gsm --HEAD 
 
 mkdir ~/.gnuradio
 touch ~/.gnuradio/config.conf 
 
 echo "[grc]" >> ~/.gnuradio/config.conf
 echo "local_blocks_path=/usr/local/share/gnuradio/grc/blocks" >> ~/.gnuradio/config.conf
-
-brew install gqrx --HEAD
-
-brew tap dholm/homebrew-sdr
-
-# libosmocore might crash.  Use the forked version nejohnson2/libosmocore
-brew install libosmocore --HEAD # dependencies of gr-gsm
-brew install gr-gsm --HEAD 
 
 # In order to install gr-gsm properly, I needed to copy the 
 # grc block rtlsdr_source.xml to the appropriate folder.  Gnuradio-companion
