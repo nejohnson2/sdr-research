@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
 
-export PKG_CONFIG_PATH="/usr/X11/lib/pkgconfig"
-brew install wxpython
+# This may crash.  If so, see this issue: https://github.com/Homebrew/homebrew/issues/46000
+brew install gnuradio
+brew install hackrf
 
 brew tap andresv/homebrew-gnuradio
-brew install gnuradio --with-qt
-
-brew install hackrf
 brew install bladerf --HEAD 
 brew install rtlsdr --HEAD 
 
 brew install gr-osmosdr gr-baz --HEAD
+
 mkdir ~/.gnuradio
 touch ~/.gnuradio/config.conf 
 
@@ -20,6 +19,8 @@ echo "local_blocks_path=/usr/local/share/gnuradio/grc/blocks" >> ~/.gnuradio/con
 brew install gqrx --HEAD
 
 brew tap dholm/homebrew-sdr
+
+# libosmocore might crash.  Use the forked version nejohnson2/libosmocore
 brew install libosmocore --HEAD # dependencies of gr-gsm
 brew install gr-gsm --HEAD 
 
